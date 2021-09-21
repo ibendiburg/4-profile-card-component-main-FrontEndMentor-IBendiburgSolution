@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap'); /*font-family: 'Kumbh Sans', sans-serif; 400 & 700 weight*/
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--Very-dark-desaturated-blue);
+
+    overflow: hidden;
+}
+
+h3,
+h2 span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    background-color: var(--Dark-cyan);
+}
+
+.card {
+    transition: all 0.3s ease 0s;
+
+    border-radius: 25px;
+    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+    min-width: 375px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-header {
+    height: 200px;
+    background-image: url('/images/bg-pattern-card.svg');
+    background-size: stretch;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 0px 50px;
+
+    position: relative;
+}
+.card-content h2{
+    padding: 10px;
+}
+.card-content h2 span{
+    padding: 5px;
+}
+.card-content img{
+    position: absolute;
+    border-radius: 100%;
+    border: 7px solid white;
+    top: -150px;
+    width: 130px;
+}
+.card-footer{
+    border-top: 1px solid rgb(228, 228, 228);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px;
+}
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px 5px;
+}
+.stat-container h3{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.stat-container h2{
+    padding: 5px;
+}
+
+.circle .c1,
+.circle .c2{
+    position: absolute;
+}
+.circle .c1 {
+    transition: all 0.3s ease 0s;
+
+    top: -500px;
+    left: -500px;
+}
+
+.circle .c2 {
+    transition: all 0.3s ease 0s;
+
+    bottom: -500px;
+    right: -450px;
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+
+    .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .card {
+        min-width: 450px;
+    }
+
+    .circle .c1 {
+        transform: all 0.3s ease 0s;
+    
+        top: -500px;
+        left: -100px;
+    }
+    
+    .circle .c2 {
+        transform: all 0.3s ease 0s;
+    
+        bottom: -500px;
+        right: -100px
+        
+    }
+
+    .stat-container {
+        padding: 5px 30px 5px;
+    }
+}
