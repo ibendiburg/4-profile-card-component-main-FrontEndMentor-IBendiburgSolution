@@ -31,8 +31,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) [INCOMPLETE]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)[INCOMPLETE]
+- Solution URL: [Github Site](https://github.com/ibendiburg/4-profile-card-component-main-FrontEndMentor-IBendiburgSolution)
+- Live Site URL: [Live Demo](https://4-profile-card-component-main-ibendiburg-solution.vercel.app/)
 
 ## My process
 
